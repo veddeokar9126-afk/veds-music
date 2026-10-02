@@ -1,0 +1,9 @@
+# downloaded API answers (26 MB) - rebuilt by tools/build_catalog.py
+tools/cache/
+__pycache__/
+*.pyc
+# logs and temporary copies
+tools/*.log
+tools/artists.before-discover.json
+backup/
+.DS_Store

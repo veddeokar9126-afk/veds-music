@@ -1,0 +1,16 @@
+KAFLA - RUN ON LOCALHOST
+
+LINUX (Fedora): open a terminal in this folder and run  ./start-linux.sh
+                or:  python3 -m http.server 8000   then open http://localhost:8000
+WINDOWS: double-click start-windows.bat   (needs Python from python.org)
+MAC:     double-click start-mac.command
+
+You need an internet connection: song previews, album covers and album
+tracklists come live from Apple Music.
+
+UPDATE THE MUSIC DATA (new releases, new artists):
+  python3 tools/build_catalog.py
+  To add an artist, add a line to tools/artists.json first.
+  To pull in the latest releases:  python3 tools/build_catalog.py --refresh   (~15 minutes)
+
+WORKING WITH CLAUDE CODE: CLAUDE.md has the full project brief.
